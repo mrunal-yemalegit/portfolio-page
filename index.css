@@ -1,0 +1,261 @@
+body{
+    background-color: rgb(39, 35, 35);
+}
+
+h1{
+    font-family: verdana;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    font-family: garamond;
+    text-align: center;
+    color: antiquewhite;
+    line-height: 1;
+}
+
+h3{
+    font-family: helvetica;
+    text-align: center;
+    color: antiquewhite;
+    line-height: 1;
+}
+
+span{
+    font-size: 40px;
+}
+
+img{
+    margin-top: 10%;
+    width: 200px;
+    height: auto;
+    border-radius: 300px;
+}
+
+.about{
+    color: black;
+    background-color: aquamarine;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 70px;
+    text-align: center;
+    font-family: Georgia;
+}
+
+.about-flex-container{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.about-flex-container > div{
+    width: auto;
+    margin: 10px;
+}
+
+label{
+    font-family: verdana;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.info{
+    text-align: left;
+    line-height: 2;
+    font-family: georgia;
+}
+
+.skills{
+    color: antiquewhite;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.skill-set{
+    text-transform: uppercase;
+    font-family: georgia;
+    height: auto;
+    width: auto;
+    line-height: 2;
+    padding: 15px;
+}
+
+progress{
+    width: 50%;
+    height: 15px;
+}
+
+
+@media screen and (max-width: 50%){
+    .about.responsive{
+        width: 100%;
+        text-align: left;
+    }
+    progress{
+        width: 100%;
+    }
+}
+
+.experiance{
+    padding: 20px;
+    margin-bottom: 2%;
+    background-color:aquamarine;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.exp-flex-container > div{
+    margin: 10px;
+    padding: 20px;
+}
+
+#exposys, #internship{
+    width: auto;
+    height: auto;
+    background-color: rgba(48, 46, 46, 0.733);
+    color:ghostwhite;
+    padding: 5px;
+    text-align: center;
+}
+
+.services{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+    padding: 10px;
+}
+
+.services-flex-container{
+    color: black;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.exp-flex-container > div{
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+#web-design, #web-development, #single-page-application{
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#single-page-application:hover{
+    height: 300px;
+}
+
+#web-design:hover{
+    height: 300px;
+}
+
+#web-development:hover{
+    height: 300px;
+}
+
+.contact-flex-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: auto;
+    grid-gap: 30px;
+    display: flex;
+}
+
+.msg{
+    padding:20px;
+    width: auto;
+    height: auto;
+    line-height: 1.5;
+}
+
+input{
+    width: 500px;
+    height: 25px;
+}
+
+textarea{
+    width: 500px;
+}
+
+button{
+    width: 100px;
+    height: auto;
+    background-color: rgb(10, 199, 73);
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.contact-me{
+    background-color: whitesmoke;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.i{
+    width: 100px;
+    height: 200px;
+}
+
+.icon{
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 798px){
+    .msg{
+        width: 100%;
+    }
+    input{
+        width: auto;
+    }
+    textarea{
+        width: auto;
+    }
+}
+
+.foot{
+    background-color: lightsteelblue;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+progress{
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from{
+        margin-left: 100%;
+    } 
+    to{
+        margin-left: 0%;
+    }
+}
